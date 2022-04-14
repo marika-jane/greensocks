@@ -1,6 +1,14 @@
 @charset "utf-8";
 @import 'bulma/sass/utilities/initial-variables';
 
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Manrope-Regular.woff2') format('woff2');
+}
+
 // Set your brand colors
 $black: #000;
 $white: #fff;
@@ -30,7 +38,7 @@ $size-4: 0.875rem;
 $size-5: 0.75rem;
 
 // Update Bulma's global variables
-$family-sans-serif: 'indivisible', -apple-system, BlinkMacSystemFont, Segoe UI,
+$family-sans-serif: 'Manrope', -apple-system, BlinkMacSystemFont, Segoe UI,
   Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
   sans-serif;
 $weight-normal: 400;
@@ -98,13 +106,16 @@ $footer-background-color: $white;
 html,
 body {
   padding: 0;
-  font-family: 'indivisible', -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: $weight-normal;
   color: $black;
   max-width: 1594px;
   margin: auto;
+}
+
+h2 {
+  font-size: 10vh;
 }
 
 a {

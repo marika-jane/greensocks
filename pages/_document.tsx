@@ -1,10 +1,15 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
     <Html>
       <Head>
-        <link rel="stylesheet" href="https://use.typekit.net/dyl1mod.css" />
+        <link
+          rel="preload"
+          href="fonts/Manrope-Regular.woff2"
+          as="font"
+          crossOrigin=""
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -29,5 +34,5 @@ export default function Document() {
         <NextScript />
       </body>
     </Html>
-  );
+  )
 }
