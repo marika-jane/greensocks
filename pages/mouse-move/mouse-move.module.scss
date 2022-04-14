@@ -1,0 +1,39 @@
+.content {
+  background-color: black;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  // margin-top: 10vh;
+  align-items: center;
+
+  & > :first-child {
+    margin-top: 10vh;
+  }
+
+  & h1, h2 {
+    margin-bottom: 5px;
+    font-size: 120px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ff77f4;
+    cursor: crosshair;
+  }
+}
+
+.cursor-follow {
+  position: absolute;
+  background: url('/images/galaxy-small.webp') no-repeat 50% 50%;
+  background-size: cover;
+  border-radius: 250px;
+  width: 250px;
+  height: 250px;
+  z-index: 2;
+  mix-blend-mode: difference;
+  user-select: none;
+  pointer-events: none;
+  transform: translate(5px, 5px);
+}
