@@ -5,21 +5,19 @@ const Border: NextPage = () => {
   return (
     <>
       <div className={styles.page}>
+        {/* Full grunge <br /> */}
+        <br />
+        <div className={styles.content1}></div>
+        <br />
+        {/* Line art <br /> */}
+        <br />
+        <div className={styles.content2}></div>
+        <br />
+        {/* Grunge with clean middle <br /> */}
+        <br />
+        <div className={styles.content3}></div>
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div className={styles.content}>
-          <div>
-            <p>words here</p>
-          </div>
-        </div>
       </div>
     </>
   )
